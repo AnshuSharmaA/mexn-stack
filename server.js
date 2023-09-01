@@ -10,5 +10,6 @@ app.use('',guestRoutes);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-    console.log(`Server is running on ${port}`);
+    console.log(`INFO  Server running on  [http://localhost:${port}]`);
+    console.log("\x1b[33m%s\x1b[0m", "Press Ctrl+C to stop the server");
 });
